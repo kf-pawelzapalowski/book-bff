@@ -16,5 +16,8 @@
     "morgan": "~1.7.0",
     "nodesi": "^1.6.0",
     "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "heroin-js": "^1.16.2"
   }
 }
