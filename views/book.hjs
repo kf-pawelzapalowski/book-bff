@@ -1,0 +1,5 @@
+{{<layout}}
+{{$content}}
+<esi:include src="{{contentUrl}}" />
+{{/content}}
+{{/layout}}

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<header><esi:include src="https://kwasniew.github.io/menu.html" /></header>
+{{$content}}
+
+{{/content}}
+<footer>
+    <a href="https://kwasniew.github.io/footer.html" class="include"></a>
+</footer>
+</body>
+</html>
+<script>
+    $('a.include').each(function(){
+        var element = $(this);
+        $.get(element.attr('href')).done(function(data){
+            element.replaceWith(data);
+        });
+    });
+</script>
